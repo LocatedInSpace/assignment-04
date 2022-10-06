@@ -1,0 +1,10 @@
+graph TD
+    X(("•")) --> |"created taskentity"| N("New")
+    N --> |"delete"| Z(("."))
+    N --> |"update"| R("Resolved")
+    N --> |"update"| A("Active")
+    N --> |"update"| C("Closed")
+    A --> |"delete"| E("Removed")
+
+style X fill:#333333
+style Z fill:#777777
