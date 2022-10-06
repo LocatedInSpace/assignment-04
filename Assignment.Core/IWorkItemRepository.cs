@@ -2,7 +2,7 @@
 
 public interface IWorkItemRepository
 {
-    (Response Response, int ItemId) Create(WorkItemCreateDTO item);
+    (Response Response, int ItemId) Create(WorkItemCreateDTO workitem);
     WorkItemDetailsDTO Find(int itemId);
     IReadOnlyCollection<WorkItemDTO> Read();
     IReadOnlyCollection<WorkItemDTO> ReadRemoved();
